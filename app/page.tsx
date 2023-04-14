@@ -43,7 +43,7 @@ export default function Home() {
 }
 
 
-const defaultProjectId = "df5c4fb2-01c8-42ae-9658-05ab49582334";
+const defaultProjectId = "ee5c9acd-6e95-4cf2-9c31-cd62186b5b97";
 
 function RainbowKitExample() {
   const connectors = connectorsForWallets([
