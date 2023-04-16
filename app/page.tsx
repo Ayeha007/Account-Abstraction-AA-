@@ -32,18 +32,18 @@ import {
 
 import { connectorsForWallets } from '@rainbow-me/rainbowkit'
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import Image from 'next/image'
 //-----
 export default function Home() {
   return (
     <div>
-      
       {RainbowKitExample()}
     </div>
   );
 }
 
 
-const defaultProjectId = "df5c4fb2-01c8-42ae-9658-05ab49582334";
+const defaultProjectId = "ee5c9acd-6e95-4cf2-9c31-cd62186b5b97";
 
 function RainbowKitExample() {
   const connectors = connectorsForWallets([
@@ -74,7 +74,18 @@ function RainbowKitExample() {
   return (
     <WagmiConfig client={client}>
         <RainbowKitProvider chains={chains} modalSize={'compact'} >
-            <ConnectButton />
+            <div className='flex justify-between items-center p-4 bg-white w-full h-16'>
+              <Image
+              src='/logo.png'
+              alt='logo'
+              width={100}
+              height={80}
+              className='p-8'/>
+            <ConnectButton /></div>
+            <div className='flex justify-center items-center text-lg text-black'>
+              Welcome Visitors,<br/>
+              Connect your wallet with Social Apps
+            </div>
         </RainbowKitProvider>
     </WagmiConfig>
   )
