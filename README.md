@@ -1,6 +1,6 @@
 
 Vercel:
-https://psfma-task-one.vercel.app/
+https://psfma-task1.vercel.app/
 
 
 ,
